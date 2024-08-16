@@ -5,4 +5,4 @@ If the DRTracker size is incorrect you can disable the DRTracker Adjust Size opt
 
 This is a fork from https://github.com/Resike/Gladius
 
-I AM NOT THE OWNER OF THIS ADDON, THIS IS JUST A CONTINUATION ON THEIR VISION -  ALL THE CREDIT GOES TO THE AUTHOR -> @resike
+I AM NOT THE OWNER OF THIS ADDON, ALL THE CREDIT GOES TO THE AUTHOR -> @resike
