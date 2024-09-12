@@ -15,7 +15,7 @@ local strfind = string.find
 
 local CreateFrame = CreateFrame
 local GameTooltip = GameTooltip
-local GetSpellInfo = GetSpellInfo
+local GetSpellInfo = C_Spell.GetSpellInfo
 local GetSpellTexture = GetSpellTexture
 local UnitAura = UnitAura
 

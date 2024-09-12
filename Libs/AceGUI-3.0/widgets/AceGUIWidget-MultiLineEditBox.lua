@@ -6,7 +6,8 @@ if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 local pairs = pairs
 
 -- WoW APIs
-local GetCursorInfo, GetSpellInfo, ClearCursor = GetCursorInfo, GetSpellInfo, ClearCursor
+local GetCursorInfo, ClearCursor = GetCursorInfo, GetSpellInfo, ClearCursor
+local GetSpellInfo = C_Spell.GetSpellInfo
 local CreateFrame, UIParent = CreateFrame, UIParent
 local _G = _G
 

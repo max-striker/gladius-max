@@ -12,16 +12,8 @@ local strfind = string.find
 
 local AceGUIWidgetLSMlists = AceGUIWidgetLSMlists
 local CreateFrame = CreateFrame
-local GetSpellInfo = GetSpellInfo or function(spellID)
-  if not spellID then
-    return nil;
-  end
+local GetSpellInfo = C_Spell.GetSpellInfo
 
-  local spellInfo = C_Spell.GetSpellInfo(spellID);
-  if spellInfo then
-    return spellInfo.name, nil, spellInfo.iconID, spellInfo.castTime, spellInfo.minRange, spellInfo.maxRange, spellInfo.spellID, spellInfo.originalIconID;
-  end
-end
 local GetTime = GetTime
 local UnitCastingInfo = UnitCastingInfo
 local UnitChannelInfo = UnitChannelInfo
