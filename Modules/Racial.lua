@@ -350,7 +350,7 @@ function Racial:Show(unit)
 	if not unitRaceCDs["SCOURGE"] == nil then
 		RacialIcon = C_Spell.GetSpellTexture(unitRaceCDs["SCOURGE"].spellID)
 	else
-		RacialIcon = GetSpellTexture("167152")
+		RacialIcon = GetSpellTexture(237274)
 	end
 	if testing then
 		if (not self.frame[unit].race) then
@@ -374,7 +374,7 @@ function Racial:Reset(unit)
 	if not unitRaceCDs["SCOURGE"] == nil then
 		RacialIcon = GetSpellTexture(unitRaceCDs["SCOURGE"].spellID)
 	else
-		RacialIcon = GetSpellTexture(12975)
+		RacialIcon = GetSpellTexture(237274)
 	end
 	if (not self.frame[unit].race) then
 		self.frame[unit].texture:SetTexture(RacialIcon)
