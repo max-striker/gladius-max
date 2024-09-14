@@ -17,7 +17,16 @@ local unpack = unpack
 
 local CreateFrame = CreateFrame
 local GetSpecializationInfoByID = GetSpecializationInfoByID
-local GetSpellInfo = C_Spell.GetSpellInfo
+local GetSpellInfo = GetSpellInfo or function(spellID)
+  if not spellID then
+    return nil;
+  end
+
+  local spellInfo = C_Spell.GetSpellInfo(spellID);
+  if spellInfo then
+    return spellInfo.name, nil, spellInfo.iconID, spellInfo.castTime, spellInfo.minRange, spellInfo.maxRange, spellInfo.spellID, spellInfo.originalIconID;
+  end
+end
 
 local GetTime = GetTime
 local UnitAura = UnitAura or function(unitToken, index, filter)
